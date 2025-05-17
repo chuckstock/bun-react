@@ -20,6 +20,13 @@ const server = serve({
         })
       },
     },
+    '/api/healthz': {
+      async GET(req) {
+        return Response.json({
+          message: 'OK',
+        })
+      },
+    },
 
     '/api/hello/:name': async (req) => {
       const name = req.params.name
