@@ -9,13 +9,13 @@ const server = serve({
     '/api/hello': {
       async GET(req) {
         return Response.json({
-          message: 'Hello, world!',
+          message: 'Hello, world',
           method: 'GET',
         })
       },
       async PUT(req) {
         return Response.json({
-          message: 'Hello, world!',
+          message: 'Hello, world',
           method: 'PUT',
         })
       },
@@ -36,7 +36,6 @@ const server = serve({
     // Echo console logs from the browser to the server
     console: true,
   },
-  port: 3001,
 })
 
 console.log(`🚀 Server running at ${server.url}`)
