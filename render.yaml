@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: bun-react
+    runtime: bun
+    repo: https://github.com/chuckstock/bun-react
+    plan: free
+    region: us-east-1
+    buildCommand: bun install
+    startCommand: bun start
